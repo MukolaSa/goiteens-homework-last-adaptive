@@ -1,3 +1,4 @@
+# goiteens-homework-last-adaptive
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,39 +14,76 @@
 <body>
     <!-- Шапка -->
     <header>
-    <div class="container header-nav ">
-        <a class="logo" href="./"><span>Web</span>Studio</a>
-        <!-- Кнопка мобільного меню -->
-        <button type="button" class="mobile-button">
-            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-                <use href="./img/symbol-defs.svg#icon-email"></use>
-                <use href="./img/symbol-defs.svg#icon-phonen"></use>
-            </svg>
-        </button>
-        <nav>             
-        <ul class="nav-list">               
-            <li class="list-item"><a class="link current" href="./">Студія</a></li>
-            <li class="list-item"><a class="link" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
-            <li class="list-item"><a class="link" href="">Контакти</a></li>
-        </ul> 
-        </nav>
-        <ul class="contacts-nav">
-            <li>
-                <a class="contacts-link" href="mailto:info@devstudio.com">
-                    <svg class="contact-icon" width="16" height="12">
-                        <use href="./img/symbol-defs.svg#icon-email"></use>
-                    </svg>                
-                info@devstudio.com
-                </a>
-            </li>
-            <li><a class="contacts-link" href="tel:+380961111111">
-                <svg class="contact-icon" width="10" height="16">
-                    <use href="./img/symbol-defs.svg#icon-phonen"></use>
+        <div class="container header-nav ">
+            <a class="logo" href="./"><span>Web</span>Studio</a>
+            <!-- Кнопка мобільного меню -->
+            <button 
+                    type="button" 
+                    class="mobile-button" 
+                    data-menu-button 
+                    aria-expanded="false">
+                <svg width="40" 
+                    height="40" 
+                    aria-label="Перекмикач мобільного меню">
+                    <use class="mobile-close" href="./img/symbol-defs.svg#close40px"></use>
+                    <use class="mobile-open" href="./img/symbol-defs.svg#menu40px"></use>
                 </svg>
-                +38 096 111 11 11</a></li>
-        </ul>
-    </div>
-    </header>
+            </button>
+    
+            <div class="mobile-menu" id="mobile-menu" data-menu>
+                <div>
+                    <nav class="navigation">             
+                    <ul class="nav-list">               
+                        <li class="list-item"><a class="link current" href="./">Студія</a></li>
+                        <li class="list-item"><a class="link" href="./portfolio.html" target="_blank" rel="noopener noreferer">Портфоліо</a></li>
+                        <li class="list-item"><a class="link" href="">Контакти</a></li>
+                    </ul> 
+                    </nav>
+            </div>
+                <div>
+                    <div class="contacts">
+                        <ul class="contacts-list">
+                    <li class="contacts-item">
+                        <a class="contacts-link" href="mailto:info@devstudio.com">
+                            <svg class="contact-icon" width="16" height="12">
+                                <use href="./img/symbol-defs.svg#icon-email" ></use>
+                            </svg>                
+                        info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts-item"><a class="contacts-link" href="tel:+380961111111">
+                        <svg class="contact-icon" width="10" height="16">
+                            <use href="./img/symbol-defs.svg#icon-phonen"></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
+                        </ul>
+                    </div>
+                    <ul class="networks-list">
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferrer" class="networks-link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferrer" class="networks-link">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferrer" class="networks-link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="networks-item">
+                            <a href="" rel="noopener, noreferrer" class="networks-link">
+                                Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </header>
     <!-- Основна секція -->
     <main>
     <!-- Секція герой -->
@@ -128,8 +166,7 @@
             </div>
         </section>
         
-    <!-- Секція особливості -->
-        <section class="section">
+            <section class="section">
             <div class="container">
                 <h2 class="visually-hidden">Особливості</h2>
             <ul class="features">
@@ -140,7 +177,7 @@
                     </svg>
                     </div>
                     <h3 class="title ">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, velit!</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, a nemo perferendis quia accusamus temporibus repellat sequi architecto, et fugit in similique nam ipsa adipisci quae rerum quo tempora illo!</p>
                 </li>
                 <li class="features-item">
                     <div class="features-icon">
@@ -149,7 +186,7 @@
                     </svg>
                     </div>
                     <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, velit!</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, a nemo perferendis quia accusamus temporibus repellat sequi architecto, et fugit in similique nam ipsa adipisci quae rerum quo tempora illo!</p>
                 </li>
                 <li class="features-item">
                     <div class="features-icon">
@@ -158,7 +195,7 @@
                     </svg>
                     </div>
                     <h3 class="title">ПЛАНУВАННЯ</h3>
-                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, velit!</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, a nemo perferendis quia accusamus temporibus repellat sequi architecto, et fugit in similique nam ipsa adipisci quae rerum quo tempora illo!</p>
                 </li>
                 <li class="features-item">
                     <div class="features-icon">
@@ -167,40 +204,8 @@
                     </svg>
                     </div>
                     <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, velit!</p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, a nemo perferendis quia accusamus temporibus repellat sequi architecto, et fugit in similique nam ipsa adipisci quae rerum quo tempora illo!</p>
                 </li>                
-            </ul>
-            </div>
-        </section>
-    <!-- Секція чим ми займаємось -->
-        <section class="section work">
-            <div class="container">
-                <h2 class="section-title">Чим ми займаємося</h2>
-            <ul class="image">
-                <li class="image-work">
-                    <div class="thumb">
-                        <img src="./img/клавіатура.jpg" alt="Зображення планшету">
-                        <div class="thumb-text">
-                            <p>ДЕСКТОПНІ ЗАСТОСУНКИ</p>
-                        </div>
-                    </div>                    
-                </li>
-                <li class="image-work">
-                    <div class="thumb">
-                        <img src="/img/laptop.jpg" alt="Зображення планшету">
-                        <div class="thumb-text">
-                            <p>МОБІЛЬНІ ЗАСТОСУНКИ</p>
-                        </div>
-                    </div>                    
-                </li>
-                <li class="image-work">
-                    <div class="thumb">
-                        <img src="./img/планшет.jpg" alt="Зображення планшету">
-                        <div class="thumb-text">
-                            <p>ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
-                        </div>
-                    </div>                    
-                </li>
             </ul>
             </div>
         </section>

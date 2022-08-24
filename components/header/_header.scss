@@ -6,6 +6,7 @@
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 3%;
+
   }
   
   span {
@@ -103,6 +104,10 @@
   }
   }
   .contact-icon{
+    @media (max-width: 767px) {
+      display: none;
+    }
+
     margin-right: 10px;
     fill: currentColor;
 
@@ -112,3 +117,32 @@
     fill: var(--accent-color);
     }
   }
+
+
+
+
+
+  .nav-list {
+    display: flex;
+
+
+    margin-left: 93px;
+}
+
+
+.nav-list .link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  color: #000000;
+  font-weight: 500;  font-size: 14px;
+
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+
+.header-nav,
+.contacts-nav {
+    @include centeredFlex(flex-start)
+}
